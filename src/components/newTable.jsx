@@ -29,10 +29,15 @@ const data = [
 ];
 
 export default function NewTable() {
-  const [collapsed, setCollapsed] = useState(data.map(() => true));
+  const [expandedRow, setExpandedRow] = useState(-1);
 
   const handleClick = (index) => {
-    setCollapsed(collapsed.map((item, i) => i === index ? false : true));
+    if (index === expandedRow) {
+      setExpandedRow(-1);
+    } 
+    else {
+      setExpandedRow(index);
+    }
   };
 
   return (
@@ -48,12 +53,12 @@ export default function NewTable() {
         <tbody>
           {data.map((row, index) => (
             <Fragment key={`${index}${row.company}`}>
-              <tr  style={{ cursor: "pointer" }} onClick={() => handleClick(index)}>
+              <tr style={{ cursor: "pointer" }} onClick={() => handleClick(index)}>
                 <td>{row.company}</td>
                 <td>{row.contact}</td>
                 <td>{row.country}</td>
               </tr>
-              {!collapsed[index] && (
+              {index === expandedRow && (
                 <tr>
                   <td className="colorCollapse" colSpan={3}>{row.description}</td>
                 </tr>
