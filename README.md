@@ -1,7 +1,7 @@
 <h1>table-expand-collapse-row</h1>
 
 
-Description:  table that expand and collapse row, very simple, made in react vite
+Table that expand and collapse row, very simple, made in react vite
 
 ---------------------------------------------------------------------------------------------------------
 
