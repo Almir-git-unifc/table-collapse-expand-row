@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import './style.css';
 
 const data = [
@@ -29,6 +29,12 @@ const data = [
 ];
 
 export default function NewTable() {
+  const [collapsed, setCollapsed] = useState(data.map(() => true));
+
+  const handleClick = (index) => {
+    setCollapsed(collapsed.map((item, i) => i === index ? false : true));
+  };
+
   return (
     <div className="App">
       <table>
@@ -42,11 +48,16 @@ export default function NewTable() {
         <tbody>
           {data.map((row, index) => (
             <Fragment key={`${index}${row.company}`}>
-              <tr>
+              <tr  style={{ cursor: "pointer" }} onClick={() => handleClick(index)}>
                 <td>{row.company}</td>
                 <td>{row.contact}</td>
                 <td>{row.country}</td>
-              </tr>              
+              </tr>
+              {!collapsed[index] && (
+                <tr>
+                  <td className="colorCollapse" colSpan={3}>{row.description}</td>
+                </tr>
+              )}
             </Fragment>
           ))}
         </tbody>
