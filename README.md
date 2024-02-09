@@ -15,6 +15,7 @@ Description:  IN BUILDIN: Expand and collapse row, very simple, made in react vi
                          v00.00.001 test send versions.md file
                          v00.01.000 - send structure of project"
                     v00.02.000 - sent non-clickable created table, with immutable data"
+                       v00.03.000 - table expands the row and the other rows shrink"
                            
 
                      ==================================================
