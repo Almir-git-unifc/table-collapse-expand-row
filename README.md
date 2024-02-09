@@ -1,22 +1,15 @@
 <h1>table-expand-collapse-row</h1>
 
 
-Description:  IN BUILDIN: Expand and collapse row, very simple, made in react vite
+Description:  table that expand and collapse row, very simple, made in react vite
 
 ---------------------------------------------------------------------------------------------------------
 
  
 <h3 align="center"> 
-     STATUS: 🔔  React VITE 🚀  App:  '' buildin  ...  🎯  
+     STATUS: 🔔  React VITE 🚀  App: Finished...  🎯  
 </h3>
 
-
-
-                         v00.00.001 test send versions.md file
-                         v00.01.000 - send structure of project"
-                    v00.02.000 - sent non-clickable created table, with immutable data"
-                       v00.03.000 - table expands the row and the other rows shrink"
-                           
 
                      ==================================================
                       
@@ -24,7 +17,7 @@ Description:  IN BUILDIN: Expand and collapse row, very simple, made in react vi
 --------------------------------------------------------------------------------------
 
 
-![](https://github.com/Almir-git-unifc//blob/main/xxxxxxxx.png)
+![screen-table-collapse-row](https://github.com/Almir-git-unifc/table-collapse-expand-row/blob/main/screen1.png)
 
 
 --------------------------------------------------------------------------------------
@@ -50,9 +43,6 @@ This project was found in codesandbox.io with the title 'react table expand-coll
 
 However, during my development, one of the differences in relation to the original project was that while one line is shown, all other lines are hidden; and another difference was displaying variable information that is stored in the table itself.
 
-<!-- 
-Example: Layout de site responsivo, simples, criado com código html, css e javascript; usando regra de mídia, barra de rolagem, ícone de sanduíche e menu deslizante 
- -->
 
 
 
@@ -92,7 +82,7 @@ From your command line:
 ```
 &nbsp;
 ## Clone this repository or download zip folder
-### $ `https://github.com/Almir-git-unifc/.git`
+### $ `https://github.com/Almir-git-unifc/table-collapse-expand-row.git`
 
 
 &nbsp;
@@ -136,30 +126,3 @@ You may also see any lint errors in the console.
 
 - Github: [@Almir-git-hub](https://github.com/Almir-git-unifc)
 
-
-
-
-
-# React + Vite
-
-Codigo encontrado: https://codesandbox.io/p/sandbox/react-table-expand-collapse-row-mx3gl?file=%2Fsrc%2FApp.js%3A2%2C15
-
-
-react table expand collapse row
-app chamado no json:  react-table-expand-collapse-row
-
-The original project was written in react typescript; and I rewrote it in Vite using JavaScript.
-
-
-One of the differences from the original project was modifying the Collapse code so that when a line was displayed, all other lines were hidden, and only one line was displayed at a time, working like a personalized accordion.
-
-
-Another change was to modify the 'collapse' line that showed unchanged information and now displays variable information, which is obtained in a column of the table.
-
-And it also assigns a different color to the line displayed in the collapse than the other lines.
-
-
-
-
-
-Expand and collapse row, very simple, made in react vite
